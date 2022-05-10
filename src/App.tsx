@@ -1,22 +1,21 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
+import logo from './images/logo.png'
 import './app.less'
 
 function App() {
   const [count, setCount] = useState(0)
-
   return (
     <div className="app">
       <div className="logo-wraper">
-        <img src="./images/logo.png" alt="logo" />
+        <img src={logo} alt="logo" />
       </div>
       <div className="box">
         <h2 className='title-wrapper'>
-          <span className='title'>awesome demo</span>
-          <span className='sub-title'>this's  created by vite </span>
+          <div className='title'>awesome demo</div>
+          <div className='sub-title'>this's  created by vite </div>
         </h2>
-        <a href={"#"} className='btn'>clice me</a>
+        <a href={"#"} className='btn btn-white'>clice me</a>
       </div>
-
     </div>
   )
 }
