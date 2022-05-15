@@ -1,0 +1,92 @@
+.btn {
+  display: inline-block;
+  position: relative;
+  padding: 1.5rem 6rem;
+  color: #777;
+  letter-spacing: 0.2rem;
+  animation: moveInBottom 2s;
+  animation-fill-mode: backwards;
+  font-size: @default-font-size;
+  &-white {
+    background-color: @white;
+    &::after {
+      background-color: @white;
+    }
+  }
+  &-pink {
+    background-color: @pink;
+    &::after {
+      background-color: @pink;
+    }
+  }
+  &::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    border-radius: 10rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -999;
+    transition: all 0.4s;
+    opacity: 0.3;
+  }
+  &:link,
+  &:visited {
+    text-transform: uppercase;
+    border-radius: 10rem;
+    transition: all 0.2s;
+  }
+  &:hover {
+    transform: translateY(-0.3rem);
+    box-shadow: 0 1rem 2rem rgba(@balck, 0.1);
+  }
+  &:hover::after {
+    transform: scaleX(1.2) scaleY(1.4);
+    opacity: 0;
+  }
+  &:active {
+    transform: translateY(-0.1rem);
+    box-shadow: 0 0.5rem 1rem rgba(@balck, 0.1);
+  }
+}
+
+.btn-text{
+  &:link,
+  &:visited {
+    position: relative;
+    font-size: @default-font-size;
+    color: @color-primary;
+    display: inline-block;
+    text-decoration: none;
+    padding: 5px;
+    transition: all .2s;
+  }
+  &:hover {
+    background-color: @color-primary;
+    color: @white;
+    box-shadow: 0 1rem 2rem rgba(@balck, 0.1);
+    transform: translateY(-2px);
+    &::after{
+      width: 100%;
+      background-color: @white;
+    }
+  }
+  &:active {
+    box-shadow: 0 .5rem 1rem rgba(@balck, 0.1);
+    transform: translateY(0px);
+  }
+  &::after{
+    position: absolute;
+    left: 50%;
+    bottom: 2px;
+    transform: translateX(-50%);
+    content:"";
+    display: inline-block;
+    width:0;
+    height: 1px;
+    background-color: @color-primary;
+    transition: all 0.5s;
+  }
+}
