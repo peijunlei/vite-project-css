@@ -38,7 +38,7 @@ function App() {
                 this is h3 heading-2#
               </h3>
               <p className='paragraph'>this is paragraph description of heading-2# this is paragraph description of heading-2#this is paragraph description of heading-2#</p>
-              <a href="#" className='btn-text'> learn more &rarr;</a>
+              <a href="#" className='btn-link'> learn more &rarr;</a>
             </div>
             <div className="right">
               <div className="composition">
@@ -49,6 +49,7 @@ function App() {
             </div>
           </div>
         </section>
+        
       </main>
     </div>
 

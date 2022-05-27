@@ -3,6 +3,7 @@
 @import "./styles/utils.less";
 @import "./styles/button.less";
 @import "./styles/composition.less";
+@import './styles/iconfont.css';
 .app {
 	height: 100%;
 	.header {
@@ -70,7 +71,7 @@
 				-webkit-background-clip: text;
 				color: transparent;
 				text-transform: uppercase;
-				font-size: 3.5rem;
+				font-size: 4rem;
 				font-weight: 700;
 				background-image: linear-gradient(
 					to right,
@@ -79,10 +80,6 @@
 				);
 				letter-spacing: 5px;
 				transition: all 0.2s;
-				&:hover {
-					transform: skewY(-2deg) skewX(15deg) scale(1.1);
-					text-shadow: 0.5rem 1rem 2rem rgba(@balck, 0.2);
-				}
 			}
 			.main-content {
 				display: flex;

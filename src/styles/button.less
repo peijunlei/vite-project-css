@@ -52,7 +52,7 @@
   }
 }
 
-.btn-text{
+.btn-link{
   &:link,
   &:visited {
     position: relative;
@@ -64,29 +64,19 @@
     transition: all .2s;
   }
   &:hover {
-    background-color: @color-primary;
-    color: @white;
-    box-shadow: 0 1rem 2rem rgba(@balck, 0.1);
-    transform: translateY(-2px);
     &::after{
-      width: 100%;
-      background-color: @white;
+      width: 95%;
     }
   }
-  &:active {
-    box-shadow: 0 .5rem 1rem rgba(@balck, 0.1);
-    transform: translateY(0px);
-  }
   &::after{
+    content:"";
     position: absolute;
     left: 50%;
-    bottom: 2px;
+    bottom: 0;
     transform: translateX(-50%);
-    content:"";
-    display: inline-block;
     width:0;
     height: 1px;
     background-color: @color-primary;
-    transition: all 0.5s;
+    transition: all .3s;
   }
 }
