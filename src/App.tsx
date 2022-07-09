@@ -49,7 +49,39 @@ function App() {
             </div>
           </div>
         </section>
-        
+        <section className='feature'>
+          <div className="row">
+            <div className="feature-box">
+              <i className='iconfont icon-download feature-box-icon'></i>
+              <h3 className="feature-box-tertiary"> Explore the world </h3>
+              <p className='feature-box-text'>
+                this is paragraph description of heading-1# this is paragraph description of heading-1#this is paragraph description of heading-1#
+              </p>
+            </div>
+            <div className="feature-box">
+              <i className='iconfont icon-Exportservices feature-box-icon'></i>
+              <h3 className="feature-box-tertiary"> Explore the world </h3>
+              <p className='feature-box-text'>
+                this is paragraph description of heading-1# this is paragraph description of heading-1#this is paragraph description of heading-1#
+              </p>
+            </div>
+            <div className="feature-box">
+              <i className='iconfont icon-connections feature-box-icon'></i>
+              <h3 className="feature-box-tertiary"> Explore the world </h3>
+              <p className='feature-box-text'>
+                this is paragraph description of heading-1# this is paragraph description of heading-1#this is paragraph description of heading-1#
+              </p>
+            </div>
+            <div className="feature-box">
+              <i className='iconfont icon-company feature-box-icon'></i>
+              <h3 className="feature-box-tertiary"> Explore the world </h3>
+              <p className='feature-box-text'>
+                this is paragraph description of heading-1# this is paragraph description of heading-1#this is paragraph description of heading-1#
+              </p>
+            </div>
+          </div>
+
+        </section>
       </main>
     </div>
 

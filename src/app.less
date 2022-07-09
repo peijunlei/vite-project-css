@@ -3,6 +3,7 @@
 @import "./styles/utils.less";
 @import "./styles/button.less";
 @import "./styles/composition.less";
+@import "./styles/feature.less";
 @import './styles/iconfont.css';
 .app {
 	height: 100%;
@@ -13,9 +14,9 @@
 				@linear-gradient-color-1,
 				@linear-gradient-color-2
 			),
-			url("./images/bg_1.png");
+			url("./images/composition-1.png");
 		background-size: cover;
-		background-position: top;
+		background-position: center;
 		clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 		position: relative;
 
@@ -63,7 +64,14 @@
 
 	.main {
 		.main-about {
-			background-color: #f7f7f7;
+			background-image: linear-gradient(
+				to right bottom,
+				@linear-gradient-color-1,
+				@linear-gradient-color-2
+			),
+			url("./images/composition-2.png");
+		background-size: cover;
+    background-position: center;
 			padding: 25rem 0;
 			margin-top: -20vh;
 			.main-title {

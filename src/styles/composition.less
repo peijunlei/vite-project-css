@@ -1,6 +1,10 @@
 .composition{
   position: relative;
   height: 40rem;
+  &:hover &-photo:not(:hover){  
+      transform: scale(0.95);
+      filter: blur(0.2rem);
+    }
   &-photo{
     width: 55%;
     box-shadow: 0 1.5rem 4rem rgba(@balck,0.4);
@@ -9,6 +13,7 @@
     transition: all .2s;
     z-index: 10;
     outline-offset: 2rem;
+    border-radius: 2rem;
     &:hover{
       outline: 1.5rem solid @color-primary;
       transform: scale(1.05);
